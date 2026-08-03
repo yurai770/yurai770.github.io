@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -m \"Deploy $(Get-Date -Format 'yyyy.MM.dd HH:mm')\""
+    "deploy": "node deploy.js"
   },
   "dependencies": {
     "react": "^19.2.6",
