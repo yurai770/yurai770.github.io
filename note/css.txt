@@ -1,0 +1,4 @@
+Html의 <class >
+->
+리액트 <className> 키워드를 사용.
+파일 상단에서 import 'file.css'; 해주는것 잊지 말기
