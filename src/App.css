@@ -36,18 +36,76 @@
 .menu-list {
   display: flex;
   flex-direction: column; /* 메뉴 세로 정렬 */
-  gap: 15px; /* 메뉴 항목 간격 */
 }
 
+/* 메뉴 그룹 간격 */
+.menu-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 공통 메뉴 아이템 스타일 */
 .menu-item {
   text-decoration: none;
-  color: #555;
-  font-weight: bold;
-  font-size: 1.1rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 8px 4px;
+  border-radius: 4px;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
 .menu-item:hover {
   color: #0070f3;
+  background-color: #f8f9fa;
+}
+
+/* 메인 메뉴 스타일 */
+.main-menu {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Study 헤더 전용 */
+.study-header {
+  user-select: none; /* 클릭 시 텍스트 드래그 방지 */
+}
+
+/* 화살표 아이콘 및 회전 애니메이션 */
+.arrow {
+  font-size: 0.7rem;
+  color: #888;
+  transition: transform 0.2s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+/* 서브메뉴 스타일 (들여쓰기 및 글씨 크기 조정) */
+.sub-menu-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px; /* 👈 들여쓰기 설정 */
+  margin-top: 4px;
+  gap: 4px;
+}
+
+.sub-menu {
+  font-size: 0.95rem; /* 👈 메인 메뉴보다 약간 작은 글씨 크기 */
+  color: #666;
+  font-weight: normal;
+}
+
+/* 메인 메뉴 간 얇은 구분선 */
+.menu-divider {
+  height: 1px;
+  background-color: #eee; /* 👈 얇은 구분선 색상 */
+  margin: 12px 0;
 }
 
 /* [하단 - 우측: 내용] */
